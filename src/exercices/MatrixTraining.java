@@ -97,7 +97,17 @@ public class MatrixTraining {
 	 */
 	public int sum(int[][] matrix) {
 
-		return sum(matrix);
+		int value =0;
+    	
+        for (int i = 0; i < matrix[0].length; i++) {
+        	value += matrix[0][i] + matrix[matrix.length - 1][i];
+        }
+        for (int j = 1; j < matrix.length - 1; j++) {
+        	value += matrix[j][0] + matrix[j][matrix[0].length - 1];
+        }
+
+        return value;
+		
 	}
 
 	/**

@@ -103,7 +103,12 @@ public class ArrayTraining {
 	 */
 	public int sum(int[] array) {
 
-		return sum(array);
+		int value = 0;
+		for (int i = 0; i < array.length; i++) {
+			value += array[i];
+		}
+		
+		return value;
 	}
 
 	/**
